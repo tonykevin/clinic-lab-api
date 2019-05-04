@@ -1,0 +1,30 @@
+{
+  "name": "clinic-lab-api",
+  "version": "0.1.0",
+  "description": "RESTful API to help in the activities of a clinical laboratory.",
+  "main": "server",
+  "homepage": "https://github.com/tonykevin/clinic-lab-api#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonykevin/clinic-lab-api.git"
+  },
+  "keywords": [
+    "clinic",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/tonykevin/clinic-lab-api/issues"
+  },
+  "author": "Tony Kevin Salamanca <h@tonykevin.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "koa": "^2.7.0"
+  }
+}
