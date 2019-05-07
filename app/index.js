@@ -1,11 +1,8 @@
 const Koa = require('koa')
-const Router = require('koa-router')
-
-const { routes } = require('../config/')
+const routes = require('./routes')
 
 const app = new Koa()
-const router = new Router()
 
-app.use(routes(router))
+app.use(routes)
 
 module.exports = app
