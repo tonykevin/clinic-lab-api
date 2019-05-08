@@ -1,5 +1,5 @@
 const Koa = require('koa')
-const routes = require('./routes')
+const routes = require('../config/routes')
 
 const app = module.exports = new Koa()
 
