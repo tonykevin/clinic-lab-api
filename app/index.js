@@ -1,8 +1,6 @@
 const Koa = require('koa')
-const routes = require('./routes')
+const routes = require('../routes')
 
-const app = new Koa()
+const app = module.exports = new Koa()
 
 app.use(routes)
-
-module.exports = app
