@@ -19,13 +19,24 @@
   "license": "MIT",
   "scripts": {
     "start": "node .",
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "test": "ava"
   },
   "devDependencies": {
+    "ava": "^1.4.1",
     "nodemon": "^1.19.0"
   },
   "dependencies": {
     "koa": "^2.7.0",
     "koa-router": "^7.4.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.js"
+    ],
+    "sources": [
+      "**/*.js",
+      "!public"
+    ]
   }
 }
