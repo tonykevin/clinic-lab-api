@@ -24,7 +24,8 @@
   },
   "devDependencies": {
     "ava": "^1.4.1",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "koa": "^2.7.0",
@@ -37,6 +38,10 @@
     "sources": [
       "**/*.js",
       "!public"
-    ]
+    ],
+    "cache": true,
+    "concurrency": 5,
+    "failFast": true,
+    "verbose": true
   }
 }
