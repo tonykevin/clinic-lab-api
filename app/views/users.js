@@ -1,7 +1,6 @@
 class Users {
   list (ctx) {
     ctx.body = {
-      ok: true,
       users: [
         {
           name: 'Albert Einstein',
