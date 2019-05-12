@@ -1,6 +1,9 @@
 const Koa = require('koa')
 const routes = require('./routes')
 
-const app = module.exports = new Koa()
+const { PORT } = process.env
+const app = new Koa()
 
 app.use(routes)
+
+module.exports = app.listen(PORT)
