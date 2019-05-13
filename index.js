@@ -1,2 +1,2 @@
-require('./config/env')
+require('./config/app')
 require('./app')
