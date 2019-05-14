@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  db:
+    container_name: "clinic_lab_db"
+    image: mongo:3.4
+    ports:
+      - 27017:27017
+    volumes:
+      - "./data:/data/db"
+    networks:
+      - net
+networks:
+  net:
