@@ -1,6 +1,10 @@
-/* ------------------------------------ *\
-  # Application
-\* ------------------------------------ */
+const Koa = require('koa')
+const routes = require('./routes')
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'development'
-process.env.PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
+
+const app = new Koa()
+
+app.use(routes)
+
+module.exports = app.listen(PORT)
