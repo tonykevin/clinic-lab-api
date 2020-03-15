@@ -1,4 +1,4 @@
-const Router = require('koa-router')
+const Router = require('@koa/router')
 const { users } = require('../../app/views')
 
 const userRoutes = module.exports = new Router({

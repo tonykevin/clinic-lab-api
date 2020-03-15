@@ -23,13 +23,13 @@
     "test": "ava"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
-    "nodemon": "^1.19.0",
+    "ava": "^3.5.0",
+    "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "koa": "^2.7.0",
-    "koa-router": "^7.4.0"
+    "@koa/router": "^8.0.8",
+    "koa": "^2.11.0"
   },
   "ava": {
     "files": [
